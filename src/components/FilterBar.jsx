@@ -1,41 +1,24 @@
 import { useState } from 'react'
 
-function FilterBar({ allHandler, activeHandler, inActiveHandler }) {
-    const [activeButton, setActiveButton] = useState('all');
-    
-    const handleAll = () => {
-        setActiveButton('all');
-        allHandler();
-    }
-
-    const handleActive = () => {
-        setActiveButton('active');
-        activeHandler();
-    }
-    
-    const handleInActive = () => {
-        setActiveButton('inactive');
-        inActiveHandler();
-    }
-
+function FilterBar({ allHandler, activeHandler, inActiveHandler, activeButton }) {
     return (
         <div className="filter-bar">
             <h2>Extensions List</h2>
             <div className="filter-buttons">
                 <button
                     className={activeButton === 'all' ? 'active-button' : ''}
-                    onClick={handleAll}
+                    onClick={allHandler}
                     onMouseDown={(event) => event.preventDefault()}>
                         All
                 </button>
                 <button
                     className={activeButton === 'active' ? 'active-button' : ''}
-                    onClick={handleActive}
+                    onClick={activeHandler}
                     onMouseDown={(event) => event.preventDefault()}>
                         Active</button>
                 <button
                     className={activeButton === 'inactive' ? 'active-button' : ''}
-                    onClick={handleInActive}
+                    onClick={inActiveHandler}
                     onMouseDown={(event) => event.preventDefault()}>
                         Inactive
                     </button>
