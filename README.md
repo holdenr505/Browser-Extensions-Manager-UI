@@ -21,7 +21,8 @@ a browser extensions manager UI.
 ![Mobile Light](./screenshots/mobile-light.png)
 
 ### Links
-- Live Site URL: [Live Demo](https://holdenr505.github.io/Browser-Extensions-Manager-UI)
+- Live Site URL: [Live Demo](https://fm-browser-extensions-manager.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/browser-extensions-manage-rui-a_bSV0M8_e)
 
 ### Built with
 - HTML5
