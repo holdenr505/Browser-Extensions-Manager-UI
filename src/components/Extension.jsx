@@ -8,7 +8,7 @@ function Extension({ logo, name, description, active, activateHandler, removeHan
   }
 
   return (
-    <div className="extension">
+    <article className="extension">
       <div className="extension-info">
         <img src={logo} alt={`${name} logo`}/>
           <h2>{name}</h2>
@@ -25,7 +25,7 @@ function Extension({ logo, name, description, active, activateHandler, removeHan
           <span className="slider"></span>
         </label>
       </div>
-    </div>
+    </article>
   );
 }
 
