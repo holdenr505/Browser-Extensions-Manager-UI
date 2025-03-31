@@ -21,8 +21,12 @@ a browser extensions manager UI.
 ![Mobile Light](./screenshots/mobile-light.png)
 
 ### Links
+- Live Site URL: [Live Demo](https://holdenr505.github.io/Browser-Extensions-Manager-UI)
 
 ### Built with
 HTML5
 CSS
 React
+
+## Author
+- Holdenr505 - [@holdenr505](https://www.frontendmentor.io/profile/holdenr505)
