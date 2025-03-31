@@ -3,7 +3,6 @@ import data from './data.json';
 import ThemeBar from './components/ThemeBar';
 import FilterBar from './components/FilterBar';
 import Extension from './components/Extension';
-import logo from './assets/images/logo.svg';
 import sunIcon from './assets/images/icon-sun.svg';
 import moonIcon from './assets/images/icon-moon.svg'
 
@@ -49,7 +48,7 @@ function App() {
   return (
     <>
       <ThemeBar
-        logo={logo}
+        logoColor={theme === 'dark' ? '#FFFFFF' : '#091540'}
         themeIcon={theme === 'dark' ? sunIcon : moonIcon}
         themeHandler={handleTheme}
       />
