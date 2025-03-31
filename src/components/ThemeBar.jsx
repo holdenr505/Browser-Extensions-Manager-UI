@@ -1,9 +1,9 @@
-function ThemeBar({ logo, themeIcon, themeHandler }) {
+import Logo from "./Logo";
+
+function ThemeBar({ logoColor, themeIcon, themeHandler }) {
   return (
     <header className="theme-bar">
-      <div>
-        <img src={logo} alt="Extensions" />
-      </div>
+      <Logo color={logoColor} />
       <button
         onClick={themeHandler}
         onMouseDown={event => event.preventDefault()}>
